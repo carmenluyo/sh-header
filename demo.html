@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticky Responsive Mega Menu Example</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <style>
+      h1 { padding: 150px auto 50px auto; text-align: center; }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="sh-header-top">
+            <div class="sh-header-top-logo">
+                <svg width="114" height="26" viewBox="0 0 114 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_528_1118)">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 17.2859L1.78985 15.6531C2.62201 17.0051 3.98366 17.7449 5.26922 17.7449C6.57999 17.7449 7.51272 16.9799 7.51272 16.0358C7.51272 15.3728 7.13469 14.837 6.35317 14.454C6.12658 14.3267 5.57142 14.097 4.71453 13.7654C3.88238 13.4079 3.30248 13.1529 3.00028 12.9746C1.56303 12.2091 0.832156 11.0868 0.832156 9.58168C0.832156 8.43362 1.26036 7.48981 2.09252 6.75001C2.94988 6.01022 4.08423 5.62769 5.47061 5.62769C7.41215 5.62769 8.89957 6.34174 9.93335 7.74506L8.31968 9.47968C7.51272 8.48462 6.52959 7.97458 5.3446 7.97458C4.21024 7.97458 3.52977 8.63787 3.52977 9.47968C3.52977 10.1427 3.90758 10.653 4.66413 10.9848L6.0505 11.5716C6.90786 11.9286 7.53793 12.2091 7.96661 12.4389C9.50467 13.2552 10.286 14.403 10.286 15.9083C10.286 17.1072 9.80687 18.1277 8.87437 18.944C7.9414 19.7603 6.70624 20.1683 5.21882 20.1683C3.12606 20.1683 1.13435 19.199 0 17.2859Z" fill="#009FE3"></path>
+                    <mask id="mask0_528_1118" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="12" y="0" width="14" height="20">
+                    <path d="M12.7547 0.5H25.0828V19.8368H12.7547V0.5Z" fill="white"></path>
+                    </mask>
+                    <g mask="url(#mask0_528_1118)">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12.7547 19.8367V0.499756H15.4523V7.82145C16.259 6.57137 17.8475 5.72957 19.7631 5.72957C21.2508 5.72957 22.5112 6.21434 23.5449 7.20916C24.5785 8.20374 25.0828 9.60682 25.0828 11.4694V19.8367H22.3095V12.26C22.3095 9.73457 20.9988 8.33172 19.0575 8.33172C16.9649 8.33172 15.5277 9.93883 15.5277 12.2855V19.8367H12.7547Z" fill="#009FE3"></path>
+                    </g>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M37.8129 9.70924C36.9808 8.79069 35.947 8.33189 34.7119 8.33189C33.4767 8.33189 32.4431 8.79069 31.5858 9.70924C30.7539 10.602 30.3252 11.6991 30.3252 12.9492C30.3252 14.2245 30.7539 15.3216 31.5858 16.2144C32.4431 17.1072 33.4767 17.5665 34.7119 17.5665C35.947 17.5665 36.9808 17.1072 37.8129 16.2144C38.6703 15.3216 39.0985 14.2245 39.0985 12.9492C39.0985 11.6991 38.6703 10.602 37.8129 9.70924ZM29.5439 7.84712C30.9051 6.44403 32.6193 5.72974 34.7119 5.72974C36.8044 5.72974 38.5186 6.44403 39.8551 7.84712C41.2162 9.24996 41.8972 10.9338 41.8972 12.9492C41.8972 14.9898 41.2162 16.6989 39.8551 18.1022C38.5186 19.5053 36.8044 20.1939 34.7119 20.1939C32.6193 20.1939 30.9051 19.5053 29.5439 18.1022C28.2075 16.6989 27.527 14.9898 27.527 12.9492C27.527 10.9338 28.2075 9.24996 29.5439 7.84712Z" fill="#009FE3"></path>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M54.5067 9.68386C53.7002 8.79082 52.6412 8.33178 51.3552 8.33178C50.0696 8.33178 49.0109 8.79082 48.2044 9.68386C47.4224 10.5767 47.0189 11.648 47.0189 12.9491C47.0189 14.2499 47.4224 15.3727 48.2044 16.2653C49.0109 17.1581 50.0696 17.5921 51.3552 17.5921C52.6412 17.5921 53.7002 17.1581 54.5067 16.2653C55.3137 15.3727 55.7171 14.2499 55.7171 12.9491C55.7171 11.648 55.3137 10.5767 54.5067 9.68386ZM56.574 7.847C57.8601 9.25009 58.5156 10.9592 58.5156 12.9748C58.5156 14.9899 57.8601 16.6736 56.574 18.0769C55.2885 19.48 53.675 20.1683 51.7335 20.1683C49.8431 20.1683 48.2798 19.4287 47.0946 17.9236V25.5001H44.3216V6.08665H47.0946V8.07676C48.3302 6.52066 49.8935 5.75513 51.7587 5.75513C53.7002 5.75513 55.2885 6.44392 56.574 7.847Z" fill="#009FE3"></path>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M59.9195 17.2859L61.7094 15.6531C62.5415 17.0051 63.9029 17.7449 65.1887 17.7449C66.4995 17.7449 67.4322 16.9799 67.4322 16.0358C67.4322 15.3728 67.0539 14.837 66.2727 14.454C66.0461 14.3267 65.4909 14.097 64.634 13.7654C63.8019 13.4079 63.222 13.1529 62.9198 12.9746C61.4828 12.2091 60.7516 11.0868 60.7516 9.58168C60.7516 8.43362 61.1801 7.48981 62.012 6.75001C62.8694 6.01022 64.004 5.62769 65.3903 5.62769C67.3316 5.62769 68.8191 6.34174 69.8528 7.74506L68.2392 9.47968C67.4322 8.48462 66.4491 7.97458 65.2641 7.97458C64.1297 7.97458 63.449 8.63787 63.449 9.47968C63.449 10.1427 63.8271 10.653 64.5836 10.9848L65.97 11.5716C66.8274 11.9286 67.4574 12.2091 67.8861 12.4389C69.4242 13.2552 70.2055 14.403 70.2055 15.9083C70.2055 17.1072 69.7264 18.1277 68.7939 18.944C67.8611 19.7603 66.6257 20.1683 65.1381 20.1683C63.0456 20.1683 61.0538 19.199 59.9195 17.2859Z" fill="#009FE3"></path>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M82.4776 19.0202C81.4697 19.7858 80.2086 20.1681 78.7212 20.1681C75.7718 20.1681 74.2589 18.3059 74.2589 14.9132V8.48457H71.9144V6.08643H74.2841V1.21436H77.0322V6.08643H81.7215V8.48457H77.0322V14.964C77.0322 16.7246 77.7383 17.5919 79.1247 17.5919C79.856 17.5919 80.6625 17.3369 81.5201 16.8266L82.4776 19.0202Z" fill="#009FE3"></path>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M93.7365 16.2398C94.5686 15.347 94.9716 14.2497 94.9716 12.9488C94.9716 11.6735 94.5686 10.5764 93.7365 9.68362C92.9043 8.79057 91.871 8.33154 90.585 8.33154C89.2994 8.33154 88.2407 8.79057 87.4335 9.68362C86.627 10.5764 86.2238 11.6735 86.2238 12.9746C86.2238 14.2756 86.627 15.3725 87.4335 16.265C88.2407 17.1581 89.2994 17.5919 90.585 17.5919C91.871 17.5919 92.9043 17.1326 93.7365 16.2398ZM94.8456 6.08641H97.5181V19.8368H94.8456V17.9489C93.6105 19.4285 92.0474 20.168 90.2069 20.168C88.2656 20.168 86.627 19.4797 85.341 18.0766C84.0554 16.6733 83.4253 14.9387 83.4253 12.8723C83.4253 10.8059 84.0554 9.12258 85.341 7.77049C86.627 6.41841 88.2656 5.75488 90.2069 5.75488C92.0474 5.75488 93.6105 6.49468 94.8456 7.99977V6.08641Z" fill="#009FE3"></path>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M100.775 19.8369V6.08676H103.422V8.05113C104.229 6.49503 105.515 5.72974 107.28 5.72974C107.86 5.72974 108.389 5.806 108.893 5.95902L108.641 8.68892C108.162 8.51017 107.658 8.43366 107.154 8.43366C105.036 8.43366 103.548 9.91325 103.548 12.7959V19.8369H100.775Z" fill="#009FE3"></path>
+                    <mask id="mask1_528_1118" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="108" y="14" width="6" height="6">
+                    <path d="M108.53 14.5945H114V19.9084H108.53V14.5945Z" fill="white"></path>
+                    </mask>
+                    <g mask="url(#mask1_528_1118)">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M111.034 19.3595L110.113 19.8496C109.748 20.0433 109.322 19.7304 109.392 19.3197L109.568 18.282C109.596 18.119 109.542 17.9529 109.425 17.837L108.68 17.1023C108.385 16.8117 108.548 16.305 108.955 16.2452L109.985 16.0939C110.147 16.0698 110.286 15.9673 110.359 15.8188L110.819 14.8748C111.002 14.5011 111.528 14.5011 111.71 14.8748L112.171 15.8188C112.243 15.9673 112.383 16.0698 112.545 16.0939L113.574 16.2452C113.982 16.305 114.144 16.8117 113.849 17.1023L113.104 17.837C112.987 17.9529 112.934 18.119 112.962 18.282L113.138 19.3197C113.207 19.7304 112.781 20.0433 112.417 19.8496L111.496 19.3595C111.351 19.2828 111.178 19.2828 111.034 19.3595Z" fill="#4A267F"></path>
+                    </g>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0_528_1118">
+                    <rect width="114" height="25" fill="white" transform="translate(0 0.5)"></rect>
+                    </clipPath>
+                    </defs>
+                </svg>
+                    
+            </div>
+            <div class="sh-header-top-rigth">
+                <div class="sh-header-cart-shop">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.25 21C7.00736 21 6 19.9926 6 18.75C6 17.5074 7.00736 16.5 8.25 16.5C9.49264 16.5 10.5 17.5074 10.5 18.75C10.5 19.9926 9.49264 21 8.25 21ZM8.25 18C7.83579 18 7.5 18.3358 7.5 18.75C7.5 19.1642 7.83579 19.5 8.25 19.5C8.66421 19.5 9 19.1642 9 18.75C9 18.3358 8.66421 18 8.25 18Z" fill="#009FE3"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M17.25 21C16.0074 21 15 19.9926 15 18.75C15 17.5074 16.0074 16.5 17.25 16.5C18.4926 16.5 19.5 17.5074 19.5 18.75C19.5 19.9926 18.4926 21 17.25 21ZM17.25 18C16.8358 18 16.5 18.3358 16.5 18.75C16.5 19.1642 16.8358 19.5 17.25 19.5C17.6642 19.5 18 19.1642 18 18.75C18 18.3358 17.6642 18 17.25 18Z" fill="#009FE3"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M18.75 15.7501H6.75C6.37106 15.7533 6.04925 15.4733 6 15.0976L4.59 4.50005H3.75C3.33579 4.50005 3 4.16427 3 3.75005C3 3.33584 3.33579 3.00003 3.75 3.00003H5.25C5.62894 2.99684 5.95075 3.27681 6 3.65255L6.3075 6.00005H20.25C20.4731 5.99969 20.6847 6.09865 20.8275 6.27005C20.9685 6.44163 21.0261 6.66685 20.985 6.88505L19.485 15.1351C19.42 15.4903 19.1111 15.7487 18.75 15.7501ZM7.41 14.2501H18.1275L19.35 7.50005H6.51L7.41 14.2501Z" fill="#009FE3"/>
+                    </svg>
+                    
+                    <h4>2 <span>productos, S/560</span></h4>
+                </div>
+              </div>
+      </div>
+      <nav id="desktop-menu">
+        <div class="mega-menu">
+          <div class="mobile-nav-icon">
+            <a class="" href="#">
+              <span class="fa fa-bars"></span>
+            </a>
+          </div>
+          <div class="main-links">
+            <ul>
+              <li>
+                <a data-submenu="products" href="#">
+                  <svg class="hamburger-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="10" viewBox="0 0 14 10" fill="none">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M13 9.5H1C0.723858 9.5 0.5 9.27614 0.5 9C0.5 8.72386 0.723858 8.5 1 8.5H13C13.2761 8.5 13.5 8.72386 13.5 9C13.5 9.27614 13.2761 9.5 13 9.5ZM13.5 5C13.5 4.72386 13.2761 4.5 13 4.5H1C0.723858 4.5 0.5 4.72386 0.5 5C0.5 5.27614 0.723858 5.5 1 5.5H13C13.2761 5.5 13.5 5.27614 13.5 5ZM13.5 1C13.5 0.723858 13.2761 0.5 13 0.5H1C0.723858 0.5 0.5 0.723858 0.5 1C0.5 1.27614 0.723858 1.5 1 1.5H13C13.2761 1.5 13.5 1.27614 13.5 1Z" fill="#0F191E"/>
+                  </svg>
+                  <svg class="close-icon" xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M5.70497 4.99998L9.35497 1.35498C9.55103 1.15892 9.55103 0.841043 9.35497 0.644982C9.15891 0.448921 8.84103 0.448921 8.64497 0.644982L4.99997 4.29498L1.35497 0.644982C1.22814 0.518153 1.04328 0.46862 0.87003 0.515043C0.696778 0.561466 0.561453 0.696791 0.51503 0.870043C0.468608 1.0433 0.51814 1.22815 0.644969 1.35498L4.29497 4.99998L0.644969 8.64498C0.550313 8.73887 0.49707 8.86666 0.49707 8.99998C0.49707 9.1333 0.550313 9.2611 0.644969 9.35498C0.738853 9.44964 0.866651 9.50288 0.999969 9.50288C1.13329 9.50288 1.26109 9.44964 1.35497 9.35498L4.99997 5.70498L8.64497 9.35498C8.73885 9.44964 8.86665 9.50288 8.99997 9.50288C9.13329 9.50288 9.26109 9.44964 9.35497 9.35498C9.44963 9.2611 9.50287 9.1333 9.50287 8.99998C9.50287 8.86666 9.44963 8.73887 9.35497 8.64498L5.70497 4.99998Z" fill="#0F191E"/>
+                  </svg>
+                  <span>Todo</span>
+                </a>
+              </li>
+              <li>
+                <a data-submenu="brands" href="#">Tecnología</a>
+              </li>
+              <li>
+                <a data-submenu="support" href="#">Electrohogar</a>
+              </li>
+              <li>
+                <a data-submenu="muebles" href="#">Muebles</a>
+              </li>
+              <li>
+                <a data-submenu="calzado" href="#">Calzado</a>
+              </li>
+              <li>
+                <a data-submenu="moda" href="#">Moda</a>
+              </li>
+            </ul>
+          </div>
+          <div class="menu-dropdown">
+            <ul class="menu-item-wrapper dropdown" id="products">
+              <li>
+                <span>Categoria</span>
+              </li>
+              <li class="category-wrapper">
+                <a class="toggle-submenu-dropdown--js" href="#">
+                  <span class="item-category">Técnologia</span>
+                </a>
+                <div class="submenu-dropdown">
+                  <div class="submenu-content">
+                    <span class="submenu-dropdown-close submenu-dropdown-close--js">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M8.05745 7.00003L13.5325 1.53253C13.8265 1.23844 13.8265 0.761626 13.5325 0.467534C13.2384 0.173443 12.7615 0.173443 12.4675 0.467534L6.99995 5.94253L1.53245 0.467534C1.34221 0.27729 1.06492 0.202991 0.805046 0.272626C0.545168 0.34226 0.34218 0.545248 0.272546 0.805126C0.202911 1.065 0.27721 1.34229 0.467454 1.53253L5.94245 7.00003L0.467454 12.4675C0.32547 12.6084 0.245605 12.8001 0.245605 13C0.245605 13.2 0.32547 13.3917 0.467454 13.5325C0.608279 13.6745 0.799976 13.7544 0.999954 13.7544C1.19993 13.7544 1.39163 13.6745 1.53245 13.5325L6.99995 8.05753L12.4675 13.5325C12.6083 13.6745 12.8 13.7544 13 13.7544C13.1999 13.7544 13.3916 13.6745 13.5325 13.5325C13.6744 13.3917 13.7543 13.2 13.7543 13C13.7543 12.8001 13.6744 12.6084 13.5325 12.4675L8.05745 7.00003Z" fill="#0F191E"/>
+                      </svg>
+                    </span>
+                    <h4>Tecnología</h4>
+                    <div class="submenu-content-nav">
+                        <div class="col-3">
+                            <ul>
+                                <li class="item-subcategores"><a href="">Audio</a></li>
+                                <li><a href="">Audio</a></li>
+                                <li><a href="">Audio 1</a></li>
+                                <li><a href="">Audio 2</a></li>
+                                <li><a href="">Audio 3</a></li>
+                                <li><a href="">Audio 4</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-3">
+                            <ul>
+                                <li  class="item-subcategores"><a href="">Audio</a></li>
+                                <li><a href="">Audio 1</a></li>
+                                <li><a href="">Audio 2</a></li>
+                                <li><a href="">Audio 3</a></li>
+                                <li><a href="">Audio 4</a></li>
+                                <li><a href="">Audio 5</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-3">
+                            <ul>
+                                <li  class="item-subcategores"><a href="">Audio</a></li>
+                                <li><a href="">Audio</a></li>
+                                <li><a href="">Audio</a></li>
+                                <li><a href="">Audio</a></li>
+                                <li><a href="">Audio</a></li>
+                                <li><a href="">Audio</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                </div>
+              </li>
+              <li class="category-wrapper">
+                <a class="toggle-submenu-dropdown--js" href="#">
+                  <span class="item-category">Electro</span>
+                </a>
+                <div class="submenu-dropdown">
+                  <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Help</a></li>
+                    <li><a href="#">Contact US</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="category-wrapper">
+                <a class="toggle-submenu-dropdown--js" href="#">
+                  <span class="item-category">Muebles</span>
+                </a>
+                <div class="submenu-dropdown">
+                  <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Help</a></li>
+                    <li><a href="#">Contact US</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="category-wrapper">
+                <a class="toggle-submenu-dropdown--js" href="#">
+                  <span class="item-category">Muebles</span>
+                </a>
+                <div class="submenu-dropdown">
+                  <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Help</a></li>
+                    <li><a href="#">Contact US</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="category-wrapper">
+                <a class="toggle-submenu-dropdown--js" href="#">
+                  <span class="item-category">ElectroHogar</span>
+                </a>
+                <div class="submenu-dropdown">
+                  <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Help</a></li>
+                    <li><a href="#">Contact US</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="category-wrapper">
+                <a class="toggle-submenu-dropdown--js" href="#">
+                  <span class="item-category">Calzado</span>
+                </a>
+                <div class="submenu-dropdown">
+                  <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Help</a></li>
+                    <li><a href="#">Contact US</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="category-wrapper">
+                <a class="toggle-submenu-dropdown--js" href="#">
+                  <span class="item-category">Deporte</span>
+                </a>
+                <div class="submenu-dropdown">
+                  <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Help</a></li>
+                    <li><a href="#">Contact US</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="category-wrapper">
+                <a class="toggle-submenu-dropdown--js" href="#">
+                  <span class="item-category">Moda</span>
+                </a>
+                <div class="submenu-dropdown">
+                  <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Help</a></li>
+                    <li><a href="#">Contact US</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="category-wrapper">
+                <a class="toggle-submenu-dropdown--js" href="#">
+                  <span class="item-category">infantil</span>
+                </a>
+                <div class="submenu-dropdown">
+                  <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Help</a></li>
+                    <li><a href="#">Contact US</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="category-wrapper">
+                <a class="toggle-submenu-dropdown--js" href="#">
+                  <span class="item-category">Belleza y cuidado personal</span>
+                </a>
+                <div class="submenu-dropdown">
+                  <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Help</a></li>
+                    <li><a href="#">Contact US</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="category-wrapper">
+                <a class="toggle-submenu-dropdown--js" href="#">
+                  <span class="item-category">Construcción y herramientas</span>
+                </a>
+                <div class="submenu-dropdown">
+                  <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Help</a></li>
+                    <li><a href="#">Contact US</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="category-wrapper">
+                <a class="toggle-submenu-dropdown--js" href="#">
+                  <span class="item-category">Dormitorio</span>
+                </a>
+                <div class="submenu-dropdown">
+                  <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Help</a></li>
+                    <li><a href="#">Contact US</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="category-wrapper">
+                <a class="toggle-submenu-dropdown--js" href="#">
+                  <span class="item-category">Automóvil</span>
+                </a>
+                <div class="submenu-dropdown">
+                  <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Help</a></li>
+                    <li><a href="#">Contact US</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="category-wrapper">
+                <a href="#">
+                  <span class="more-category">Ver más categorias</span>
+                </a>
+              </li>
+            </ul>
+            <ul class="menu-item-wrapper dropdown" id="brands">
+              <li class="category-wrapper"><a href="#">FAQ</a></li>
+              <li class="category-wrapper"><a href="#">Help</a></li>
+              <li class="category-wrapper"><a href="#">Contact US</a></li>
+            </ul>
+            <ul class="menu-item-wrapper dropdown" id="support">
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Help</a></li>
+              <li><a href="#">Contact US</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <nav id="mobile-menu">
+      <div class="mega-menu">
+        <div class="mobile-nav-icon">
+          <div class="mobile-logo">
+            <a class="" href="#">
+              <span class="fa fa-bars"></span>
+            </a>
+            <div class="sh-header-top-logo">
+                <svg width="114" height="26" viewBox="0 0 114 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_528_1118)">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 17.2859L1.78985 15.6531C2.62201 17.0051 3.98366 17.7449 5.26922 17.7449C6.57999 17.7449 7.51272 16.9799 7.51272 16.0358C7.51272 15.3728 7.13469 14.837 6.35317 14.454C6.12658 14.3267 5.57142 14.097 4.71453 13.7654C3.88238 13.4079 3.30248 13.1529 3.00028 12.9746C1.56303 12.2091 0.832156 11.0868 0.832156 9.58168C0.832156 8.43362 1.26036 7.48981 2.09252 6.75001C2.94988 6.01022 4.08423 5.62769 5.47061 5.62769C7.41215 5.62769 8.89957 6.34174 9.93335 7.74506L8.31968 9.47968C7.51272 8.48462 6.52959 7.97458 5.3446 7.97458C4.21024 7.97458 3.52977 8.63787 3.52977 9.47968C3.52977 10.1427 3.90758 10.653 4.66413 10.9848L6.0505 11.5716C6.90786 11.9286 7.53793 12.2091 7.96661 12.4389C9.50467 13.2552 10.286 14.403 10.286 15.9083C10.286 17.1072 9.80687 18.1277 8.87437 18.944C7.9414 19.7603 6.70624 20.1683 5.21882 20.1683C3.12606 20.1683 1.13435 19.199 0 17.2859Z" fill="#009FE3"></path>
+                    <mask id="mask0_528_1118" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="12" y="0" width="14" height="20">
+                    <path d="M12.7547 0.5H25.0828V19.8368H12.7547V0.5Z" fill="white"></path>
+                    </mask>
+                    <g mask="url(#mask0_528_1118)">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12.7547 19.8367V0.499756H15.4523V7.82145C16.259 6.57137 17.8475 5.72957 19.7631 5.72957C21.2508 5.72957 22.5112 6.21434 23.5449 7.20916C24.5785 8.20374 25.0828 9.60682 25.0828 11.4694V19.8367H22.3095V12.26C22.3095 9.73457 20.9988 8.33172 19.0575 8.33172C16.9649 8.33172 15.5277 9.93883 15.5277 12.2855V19.8367H12.7547Z" fill="#009FE3"></path>
+                    </g>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M37.8129 9.70924C36.9808 8.79069 35.947 8.33189 34.7119 8.33189C33.4767 8.33189 32.4431 8.79069 31.5858 9.70924C30.7539 10.602 30.3252 11.6991 30.3252 12.9492C30.3252 14.2245 30.7539 15.3216 31.5858 16.2144C32.4431 17.1072 33.4767 17.5665 34.7119 17.5665C35.947 17.5665 36.9808 17.1072 37.8129 16.2144C38.6703 15.3216 39.0985 14.2245 39.0985 12.9492C39.0985 11.6991 38.6703 10.602 37.8129 9.70924ZM29.5439 7.84712C30.9051 6.44403 32.6193 5.72974 34.7119 5.72974C36.8044 5.72974 38.5186 6.44403 39.8551 7.84712C41.2162 9.24996 41.8972 10.9338 41.8972 12.9492C41.8972 14.9898 41.2162 16.6989 39.8551 18.1022C38.5186 19.5053 36.8044 20.1939 34.7119 20.1939C32.6193 20.1939 30.9051 19.5053 29.5439 18.1022C28.2075 16.6989 27.527 14.9898 27.527 12.9492C27.527 10.9338 28.2075 9.24996 29.5439 7.84712Z" fill="#009FE3"></path>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M54.5067 9.68386C53.7002 8.79082 52.6412 8.33178 51.3552 8.33178C50.0696 8.33178 49.0109 8.79082 48.2044 9.68386C47.4224 10.5767 47.0189 11.648 47.0189 12.9491C47.0189 14.2499 47.4224 15.3727 48.2044 16.2653C49.0109 17.1581 50.0696 17.5921 51.3552 17.5921C52.6412 17.5921 53.7002 17.1581 54.5067 16.2653C55.3137 15.3727 55.7171 14.2499 55.7171 12.9491C55.7171 11.648 55.3137 10.5767 54.5067 9.68386ZM56.574 7.847C57.8601 9.25009 58.5156 10.9592 58.5156 12.9748C58.5156 14.9899 57.8601 16.6736 56.574 18.0769C55.2885 19.48 53.675 20.1683 51.7335 20.1683C49.8431 20.1683 48.2798 19.4287 47.0946 17.9236V25.5001H44.3216V6.08665H47.0946V8.07676C48.3302 6.52066 49.8935 5.75513 51.7587 5.75513C53.7002 5.75513 55.2885 6.44392 56.574 7.847Z" fill="#009FE3"></path>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M59.9195 17.2859L61.7094 15.6531C62.5415 17.0051 63.9029 17.7449 65.1887 17.7449C66.4995 17.7449 67.4322 16.9799 67.4322 16.0358C67.4322 15.3728 67.0539 14.837 66.2727 14.454C66.0461 14.3267 65.4909 14.097 64.634 13.7654C63.8019 13.4079 63.222 13.1529 62.9198 12.9746C61.4828 12.2091 60.7516 11.0868 60.7516 9.58168C60.7516 8.43362 61.1801 7.48981 62.012 6.75001C62.8694 6.01022 64.004 5.62769 65.3903 5.62769C67.3316 5.62769 68.8191 6.34174 69.8528 7.74506L68.2392 9.47968C67.4322 8.48462 66.4491 7.97458 65.2641 7.97458C64.1297 7.97458 63.449 8.63787 63.449 9.47968C63.449 10.1427 63.8271 10.653 64.5836 10.9848L65.97 11.5716C66.8274 11.9286 67.4574 12.2091 67.8861 12.4389C69.4242 13.2552 70.2055 14.403 70.2055 15.9083C70.2055 17.1072 69.7264 18.1277 68.7939 18.944C67.8611 19.7603 66.6257 20.1683 65.1381 20.1683C63.0456 20.1683 61.0538 19.199 59.9195 17.2859Z" fill="#009FE3"></path>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M82.4776 19.0202C81.4697 19.7858 80.2086 20.1681 78.7212 20.1681C75.7718 20.1681 74.2589 18.3059 74.2589 14.9132V8.48457H71.9144V6.08643H74.2841V1.21436H77.0322V6.08643H81.7215V8.48457H77.0322V14.964C77.0322 16.7246 77.7383 17.5919 79.1247 17.5919C79.856 17.5919 80.6625 17.3369 81.5201 16.8266L82.4776 19.0202Z" fill="#009FE3"></path>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M93.7365 16.2398C94.5686 15.347 94.9716 14.2497 94.9716 12.9488C94.9716 11.6735 94.5686 10.5764 93.7365 9.68362C92.9043 8.79057 91.871 8.33154 90.585 8.33154C89.2994 8.33154 88.2407 8.79057 87.4335 9.68362C86.627 10.5764 86.2238 11.6735 86.2238 12.9746C86.2238 14.2756 86.627 15.3725 87.4335 16.265C88.2407 17.1581 89.2994 17.5919 90.585 17.5919C91.871 17.5919 92.9043 17.1326 93.7365 16.2398ZM94.8456 6.08641H97.5181V19.8368H94.8456V17.9489C93.6105 19.4285 92.0474 20.168 90.2069 20.168C88.2656 20.168 86.627 19.4797 85.341 18.0766C84.0554 16.6733 83.4253 14.9387 83.4253 12.8723C83.4253 10.8059 84.0554 9.12258 85.341 7.77049C86.627 6.41841 88.2656 5.75488 90.2069 5.75488C92.0474 5.75488 93.6105 6.49468 94.8456 7.99977V6.08641Z" fill="#009FE3"></path>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M100.775 19.8369V6.08676H103.422V8.05113C104.229 6.49503 105.515 5.72974 107.28 5.72974C107.86 5.72974 108.389 5.806 108.893 5.95902L108.641 8.68892C108.162 8.51017 107.658 8.43366 107.154 8.43366C105.036 8.43366 103.548 9.91325 103.548 12.7959V19.8369H100.775Z" fill="#009FE3"></path>
+                    <mask id="mask1_528_1118" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="108" y="14" width="6" height="6">
+                    <path d="M108.53 14.5945H114V19.9084H108.53V14.5945Z" fill="white"></path>
+                    </mask>
+                    <g mask="url(#mask1_528_1118)">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M111.034 19.3595L110.113 19.8496C109.748 20.0433 109.322 19.7304 109.392 19.3197L109.568 18.282C109.596 18.119 109.542 17.9529 109.425 17.837L108.68 17.1023C108.385 16.8117 108.548 16.305 108.955 16.2452L109.985 16.0939C110.147 16.0698 110.286 15.9673 110.359 15.8188L110.819 14.8748C111.002 14.5011 111.528 14.5011 111.71 14.8748L112.171 15.8188C112.243 15.9673 112.383 16.0698 112.545 16.0939L113.574 16.2452C113.982 16.305 114.144 16.8117 113.849 17.1023L113.104 17.837C112.987 17.9529 112.934 18.119 112.962 18.282L113.138 19.3197C113.207 19.7304 112.781 20.0433 112.417 19.8496L111.496 19.3595C111.351 19.2828 111.178 19.2828 111.034 19.3595Z" fill="#4A267F"></path>
+                    </g>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0_528_1118">
+                    <rect width="114" height="25" fill="white" transform="translate(0 0.5)"></rect>
+                    </clipPath>
+                    </defs>
+                </svg>
+              </div>
+          </div>
+          <div class="sh-header-top-rigth">
+              <div class="sh-header-cart-shop">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M8.25 21C7.00736 21 6 19.9926 6 18.75C6 17.5074 7.00736 16.5 8.25 16.5C9.49264 16.5 10.5 17.5074 10.5 18.75C10.5 19.9926 9.49264 21 8.25 21ZM8.25 18C7.83579 18 7.5 18.3358 7.5 18.75C7.5 19.1642 7.83579 19.5 8.25 19.5C8.66421 19.5 9 19.1642 9 18.75C9 18.3358 8.66421 18 8.25 18Z" fill="#009FE3"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M17.25 21C16.0074 21 15 19.9926 15 18.75C15 17.5074 16.0074 16.5 17.25 16.5C18.4926 16.5 19.5 17.5074 19.5 18.75C19.5 19.9926 18.4926 21 17.25 21ZM17.25 18C16.8358 18 16.5 18.3358 16.5 18.75C16.5 19.1642 16.8358 19.5 17.25 19.5C17.6642 19.5 18 19.1642 18 18.75C18 18.3358 17.6642 18 17.25 18Z" fill="#009FE3"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M18.75 15.7501H6.75C6.37106 15.7533 6.04925 15.4733 6 15.0976L4.59 4.50005H3.75C3.33579 4.50005 3 4.16427 3 3.75005C3 3.33584 3.33579 3.00003 3.75 3.00003H5.25C5.62894 2.99684 5.95075 3.27681 6 3.65255L6.3075 6.00005H20.25C20.4731 5.99969 20.6847 6.09865 20.8275 6.27005C20.9685 6.44163 21.0261 6.66685 20.985 6.88505L19.485 15.1351C19.42 15.4903 19.1111 15.7487 18.75 15.7501ZM7.41 14.2501H18.1275L19.35 7.50005H6.51L7.41 14.2501Z" fill="#009FE3"/>
+                  </svg>
+                  
+                  <h4>2</h4>
+              </div>
+          </div>
+        </div>
+        <div class="main-links">
+          <ul>
+            <li><a data-submenu="products-mobile" href="#">Técnologia</a></li>
+            <li><a data-submenu="brands-mobile" href="#">Electro</a></li>
+            <li><a data-submenu="support-mobile"  href="#">Muebles</a></li>
+
+
+          </ul>
+        </div>
+        <div class="menu-dropdown">
+          <ul class="menu-item-wrapper" id="products-mobile">
+            <a href="#" class="back-link"><span>&lt;</span> Técnologia</a>
+            <li><a href="#">Nike</a></li>
+            <li><a href="#">Adidas</a></li>
+            <li><a href="#">Puma</a></li>
+            <li><a href="#">Caterpillar</a></li>
+            <li><a href="#">Levis</a></li>
+            <li><a href="#">Wrangler</a></li>
+          </ul>
+          <ul class="menu-item-wrapper" id="brands-mobile">
+            <a href="#" class="back-link"><span>&lt;</span> Electro</a>
+            <li><a href="#">Nike</a></li>
+            <li><a href="#">Adidas</a></li>
+            <li><a href="#">Puma</a></li>
+            <li><a href="#">Caterpillar</a></li>
+            <li><a href="#">Levis</a></li>
+            <li><a href="#">Wrangler</a></li>
+          </ul>
+          <ul class="menu-item-wrapper" id="support-mobile">
+            <a href="#" class="back-link"><span>&lt;</span> Muebles</a>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Help</a></li>
+            <li><a href="#">Contact US</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="assets/js/app.js" type="text/javascript"></script>
+  </body>
+</html>
